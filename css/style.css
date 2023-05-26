@@ -110,6 +110,31 @@ a{
     border-radius: 4px;
     color: #FFF;
 }
+.icons{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: .4s;
+}
+.t-box:hover .icons{
+    display: block;
+}
+.icons i{
+    font-size: 15px;
+    background-color: #FFF;
+    color: #5C6C75;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #ebeeee;
+    transition: .4s;
+}
+.icons i:hover{
+    background-color: #08AC0A;
+    color: #FFF;
+    border: 1px solid #08AC0A;
+}
 .discount{
     position:absolute;
     top: 12px;
@@ -166,4 +191,9 @@ a{
 .count-b span{
     color: #FFF;
     font-size: 16px;
+}
+@media screen and (max-width:576px) {
+    .container{
+        padding: 0 1.5rem !important;
+    }
 }
